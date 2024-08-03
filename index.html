@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>Веб-Форми Регістрації На Сайт Хата Плюс</title>
+</head>
+<header>
+    <h1>Форми</h1>
+    <div class="wrapper flex first">
+        <div class="eazyform">
+            <h2>01. проста форма</h2>
+            <form action="">
+                <p><input name="files[name]" type="text" maxlength="40" placeholder="Введіть ім’я" required></p>
+                <p><input name="files[name]" type="email" maxlength="40" placeholder="Email" required></p>
+                <select name="" id="">
+                    <option value="Київ">Київ</option>
+                    <option value="Львів">Львів</option>
+                    <option value="Хмельницький">Хмельницький</option>
+                </select>
+                <textarea name="files[name]" type="text" maxlength="40" placeholder="Введіть ім’я" required></textarea>
+                <p><input name="files[submit]" type="submit" class="submit" value="Зареєструватися"></p>
+            </form>
+        </div>
+        <div class="login-form">
+            <h2>06. фіксована форма</h2>
+            <form action="login" method="post">
+                <div class="form-group">
+                    <label for="login">Логін</label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password">Забули пароль?</a>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Запам'ятати пароль</label>
+                </div>
+                <button type="submit">Увійти</button>
+            </form>
+        </div>
+    </div>
+    <h2 class="wrapper">02. елементи</h2>
+    <div class="wrapper flex elements">
+
+        <div class="delivery">
+            <form action="" class="checklist">
+                <label for="" class="typedelivery">
+                    <p class="gap"><input type="radio" name="" id="">Нова Пошта</p>
+                </label>
+                <label for="" class="typedelivery">
+                    <p class="gap"><input type="radio" name="" id="">Кур’єр</p>
+                </label>
+                <label for="" class="typedelivery">
+                    <p class="gap"><input type="radio" name="" id="">Самовивіз</p>
+                </label>
+            </form>
+        </div>
+        <div class="required">
+            <form action="">
+                <label for="" class="typedelivery">
+                    <p class="gap"><input type="checkbox" name="" id="">Прочитав умови договору</p>
+                    <p class="gap"><input type="checkbox" name="" id="">Згідний з ПДВ 9%</p>
+                    <p class="gap"><input type="checkbox" name="" id="">Отримувати новини на ел. пошту</p>
+                </label>
+            </form>
+        </div>
+        <div class="statedate flex">
+
+            <form>
+                <div class="form-group">
+                    <p>Статус</p>
+                    <p class="gap"><input type="checkbox" id="" name="status"></p>
+                    <label for="">Новинки</label>
+                    <input type="checkbox" id="sale" name="status">
+                    <label for="">Акційні товари</label>
+                    <input type="checkbox" id="sale" name="status">
+                    <label for="sale">Розпродаж</label>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата</label>
+                    <input type="date" id="date" name="date" value="2018-03-17">
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+    <h2 class="wrapper">03. стилізовані чекбокси </h2>
+    <div class="wrapper flex stylecheck">
+        <label for="">
+            <input type="radio" name="man" id="man" hidden>
+        </label>
+    </div>
+
+    <p class="wrapper">Заповніть усі необхідні поля</p>
+    <div class="wrapper toptable">
+        <h2>04. форма таблицею</h2>
+        <div class="whatinfo">
+            <tr>
+                <td>
+                    <p>ФІО:</p>
+                    <td>
+                        <input type="text">
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Пароль:</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Місто:</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Стать:</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Фото:</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Коментарій:</p>
+                </td>
+            </tr>
+        </div>
+        <div class="info">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</main>
+
+<body>
+
+</body>
+
+</html>
